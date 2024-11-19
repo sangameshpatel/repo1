@@ -36,3 +36,6 @@ pipeline:
                     tags:
                       - image-harness
                     dockerfile: Dockerfile
+                  when:
+                    stageStatus: Success
+                    condition: <+input>
